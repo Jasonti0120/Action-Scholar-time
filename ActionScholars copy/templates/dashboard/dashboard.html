@@ -22,8 +22,8 @@
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item"><a class="nav-link active" href="index.html"><i class="fas fa-tachometer-alt"></i><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a><a class="nav-link" href="table.html"><i class="far fa-plus-square"></i><span>Add hour</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="table.html"><i class="fas fa-table"></i><span>Table</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="login.html"><i class="far fa-user-circle"></i><span>Logout</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" id="sidebarToggle" type="button"></button></div>
@@ -188,10 +188,10 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col" style="margin: 15px;"><button class="btn btn-success btn-icon-split" type="submit"><span class="text-white-50 icon"><i class="fas fa-check"></i><strong style="color: rgb(255,255,255);width: 11px;height: 110px;text-align: center;">Add Hours</strong></span><span class="text-left text-white align-items-start text" style="height: 100%;text-align: left;border-radius: 0px;margin: 17px;">&nbsp; Date:&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<input type="date" style="max-width: 174.188px;margin: 6px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Clock in:&nbsp; &nbsp;<input class="form-control-sm" type="time" style="margin: 0px;max-width: 30%;width: 80.06px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Clock out:&nbsp;<input type="time" style="padding: 1px;padding-top: 1px;margin: 7px;margin-top: 10px;margin-right: 0px;height: 30px;width: 80.6px;max-width: 30%;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<select><optgroup label="This is a group"><option value="12" selected>Event 1</option><option value="13">Event 2</option><option value="14">Event 3</option></optgroup></select>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<select style="margin-top: 15px;"><optgroup label="Hour Type"><option value="12">Required Hours</option><option value="13">Active Hours</option><option value="14">Receptive Hours</option></optgroup></select>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;<br>Description:&nbsp; &nbsp;&nbsp;<input type="text" style="margin: -1px;margin-top: 10px;width: 280px;height: 63px;"></span></button>
-                            <a
-                                class="btn btn-danger btn-icon-split" role="button"></a>
+                        <div class="col" style="text-align: left;">
+                            <div class="chart-area" style="width: 440px;color: rgb(10,10,10);"><canvas data-bs-chart="{&quot;type&quot;:&quot;bar&quot;,&quot;data&quot;:{&quot;labels&quot;:[&quot;Required&quot;,&quot;Active&quot;,&quot;Receptive&quot;],&quot;datasets&quot;:[{&quot;label&quot;:&quot;Required&quot;,&quot;backgroundColor&quot;:&quot;rgba(204,28,28,0.1)&quot;,&quot;borderColor&quot;:&quot;rgba(208,20,20,0.1)&quot;,&quot;borderWidth&quot;:&quot;0&quot;,&quot;data&quot;:[&quot;50&quot;,&quot;0&quot;,&quot;0&quot;]},{&quot;label&quot;:&quot;Active&quot;,&quot;backgroundColor&quot;:&quot;rgba(227,192,8,0.1)&quot;,&quot;borderColor&quot;:&quot;rgba(211,190,10,0.1)&quot;,&quot;data&quot;:[&quot;0&quot;,&quot;30&quot;,&quot;0&quot;]},{&quot;label&quot;:&quot;Receptive&quot;,&quot;backgroundColor&quot;:&quot;rgba(26,33,195,0.1)&quot;,&quot;borderColor&quot;:&quot;rgba(28,35,211,0.1)&quot;,&quot;borderWidth&quot;:&quot;&quot;,&quot;data&quot;:[&quot;0&quot;,&quot;0&quot;,&quot;15&quot;]}]},&quot;options&quot;:{&quot;maintainAspectRatio&quot;:false,&quot;legend&quot;:{&quot;display&quot;:true},&quot;title&quot;:{&quot;display&quot;:true,&quot;text&quot;:&quot;Average Student Hours&quot;},&quot;scales&quot;:{&quot;xAxes&quot;:[{&quot;gridLines&quot;:{&quot;borderDash&quot;:[&quot;0&quot;],&quot;zeroLineBorderDash&quot;:[&quot;0&quot;]},&quot;ticks&quot;:{&quot;beginAtZero&quot;:false}}],&quot;yAxes&quot;:[{&quot;gridLines&quot;:{&quot;borderDash&quot;:[&quot;0&quot;],&quot;zeroLineBorderDash&quot;:[&quot;0&quot;]},&quot;ticks&quot;:{&quot;beginAtZero&quot;:false}}]}}}"></canvas></div>
                         </div>
+                        <div class="col" style="margin: 15px;"><button class="btn btn-success btn-icon-split" type="submit"></button><a class="btn btn-danger btn-icon-split" role="button"></a></div>
                         <div class="clearfix"></div>
                         <div class="clearfix"></div>
                     </div>
@@ -205,6 +205,8 @@
         </div><a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a></div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/chart.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="assets/js/theme.js"></script>
 </body>
